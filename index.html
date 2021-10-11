@@ -50,7 +50,7 @@
       <section class="main-title-box">
         <div class="container">
           <h1 class="home-page-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="btn">Заказать услугу</button>
+          <button type="button" class="btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="main-section-text">
@@ -108,12 +108,15 @@
           <ul class="list photo-container">
             <li class="item-photo-container">
               <img src="./images/plan.jpg" alt="план создания приложения" width="370" />
+              <p class="main-description-image">Десктопные приложения</p>
             </li>
             <li class="item-photo-container">
               <img src="./images/test.jpg" alt="тестирование модели приложения на мобильном интерфейсе" width="370" />
+              <p class="main-description-image">Мобильные приложения</p>
             </li>
             <li class="item-photo-container">
               <img src="./images/mosaik.jpg" alt="демонстрация приложения на различных устройствах" width="370" />
+              <p class="main-description-image">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -374,6 +377,15 @@
         </div>
       </div>
     </footer>
+    <div class="modal-bg is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="clouse-icon" data-modal-close>
+          <svg class="close" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
